@@ -1,0 +1,31 @@
+
+#port h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #2c3e50 !important;
+}
+.item .layer-d{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(26, 188, 156, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   transition: all 0.5s;
+}
+
+.layer-d{
+    color: white;
+    font-size: 4rem !important;
+}
+.item:hover .layer-d{
+  opacity: 1;
+  cursor: pointer;
+}
+.row{
+    display: flex !important;
+    align-items: center !important;
+    justify-items: center !important;
+}

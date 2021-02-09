@@ -1,0 +1,28 @@
+#about{
+    height: 100vh !important;
+    background-color: #1abc9c !important;
+}
+#about h1{
+    font-size: 3.5rem;
+    color: white;
+}
+p{
+    line-height: 2rem;
+}
+.star-elements{
+    color: white;
+}
+.before-star{
+    background-color: white;
+
+}
+.after-star{
+    background-color: white;
+}
+
+@media screen and (max-width:991px){
+  p{
+      margin-bottom: 2.5rem !important;
+      width: 100% !important;
+  }
+}

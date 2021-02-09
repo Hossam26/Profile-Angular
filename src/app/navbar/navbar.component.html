@@ -1,0 +1,24 @@
+
+<nav class="navbar mb-2 navbar-expand-lg position-absolute w-100 navbar-dark bg-secondary">
+    <div class="container">
+     <a class="navbar-brand" (click)="disable()" routerLink="home"><h2>START ANGULAR</h2></a>
+     <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+         aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+     <div class="collapse navbar-collapse" id="collapsibleNavId">
+         <ul class="navbar-nav ml-auto mt-2 mt-lg-0 ">
+            
+             <li class="nav-item mx-3 p-2 rounded" [ngClass]="{'active':first}">
+                 <a class="nav-link"  (click)="check1()" [ngClass]="{'hov':!first}" routerLink="portfolio"><h4>PORTFOLIO</h4></a>
+             </li>
+             
+             <li class="nav-item mx-3 p-2 rounded" [ngClass]="{'active':second}">
+                 <a class="nav-link" (click)="check2()" [ngClass]="{'hov':!second}" routerLink="about"><h4>ABOUT</h4></a>
+             </li>
+             <li class="nav-item mx-3 p-2 rounded"  [ngClass]="{'active':third}">
+                 <a class="nav-link" (click)="check3()" [ngClass]="{'hov':!third}" routerLink="contacts"><h4>CONTACT</h4></a>
+             </li>
+            
+         </ul>
+     </div>
+    </div>
+ </nav>

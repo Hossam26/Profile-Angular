@@ -1,0 +1,93 @@
+<section id="contact">
+    <div class="container">
+        <div class="row flex-column">
+            <h1 class="mt-5 pt-5  text-center">CONTACT ME</h1>
+            <div class="star-elements">
+                <div class="before-star">
+                </div>
+                <svg class="star mb-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"
+                    role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg="">
+                    <path fill="currentColor"
+                        d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                    </path>
+                </svg>
+                <div class="after-star"></div>
+            </div>
+        </div>
+        <div class="row mt-5">
+         <form [formGroup]="contactForm" class="w-100" (ngSubmit)="submit()">
+            <div class="col-md-9 offset-2 position-relative">
+                    
+                <div class="form-group">
+                   <input [class.is-invalid]="contactForm.controls.name.invalid&&contactForm.controls.name.touched" formControlName="name" type="text" class="form-control bg-transparent mt-1 rounded-0 h-100 w-100" placeholder="Name">
+                <div *ngIf="contactForm.controls.name.invalid&&contactForm.controls.name.touched" class="wrongInput mt-2 ml-2"  >
+                    Your name is not valid
+                </div>
+               </div>                     
+           </div>
+       <div class="col-md-9 offset-2 mt-5">
+           
+           <div class="form-group">
+               <input [class.is-invalid]="contactForm.controls.mail.invalid&&contactForm.controls.mail.touched" formControlName="mail" type="email" class=" form-control bg-transparent mt-1 rounded-0 h-100 w-100" placeholder="Email Address">
+               <div *ngIf="contactForm.controls.mail.invalid&&contactForm.controls.mail.touched"  class="wrongInput mt-2 ml-2 ">
+                  Your mail is not valid
+              </div>
+           </div>
+           </div>
+       <div class="col-md-9 offset-2 mt-5">
+           
+           <div class="form-group">
+               <input [class.is-invalid]="contactForm.controls.phone.invalid&&contactForm.controls.phone.touched" formControlName="phone" type="number" class="form-control bg-transparent mt-1 rounded-0 h-100 w-100" placeholder="phone Numer">
+               <div *ngIf="contactForm.controls.phone.invalid&&contactForm.controls.phone.touched" class="wrongInput mt-2 ml-2">
+                  Your phone is not valid
+              </div>
+           </div>
+           </div>
+           <div class="col-md-9 offset-2 position-relative">
+           
+               <div class="form-group">
+                  <textarea [class.is-invalid]="contactForm.controls.message.invalid&&contactForm.controls.message.touched" class="form-control w-100 mb-1" formControlName="message" placeholder="Message" ></textarea>
+               <div *ngIf="contactForm.controls.message.invalid&&contactForm.controls.message.touched" class="wrongInput mt-2 ml-2">
+                  Enter your message please
+               </div>
+              </div>                     
+          </div> 
+       <div class="col-md-9 offset-2 mt-5">
+           
+                <div class="form-group">
+                   <button [disabled]="contactForm.invalid" type="submit" class="btn btn-primary rounded text-white font-weight-bold mb-3 px-4 py-3">Send
+                   </button>
+               
+               </div>
+           </div>  
+         </form>   
+        </div>
+    </div>
+</section>
+<section id="details" class="pt-3 pb-4">
+  <div class="container text-center">
+       <div class="row mt-5 pb-4">
+        <div class="col-lg-4 col-md-12 my-4">
+            <h2 class="mb-4">LOCATION</h2>
+            <p class="p-0 m-0">2215 John Daniel Drive</p>
+            <p class="p-0 m-0">Clark, MO 65243</p>
+        </div>
+        <div class="col-lg-4 col-md-12 my-4">
+            <h2 class="mb-4">AROUND THE WEB</h2>
+            <fa-icon [icon]="faFace" class="icon p-3 m-2"></fa-icon>
+            <fa-icon [icon]="faTwitter" class="icon p-3 m-2"></fa-icon>
+            <fa-icon [icon]="faLinked" class="icon p-3 m-2"></fa-icon>
+            <fa-icon [icon]="faGlobe" class="icon p-3 m-2"></fa-icon>
+
+        </div>
+        <div class="col-lg-4 col-md-12 my-4">
+            <h2 class="mb-4">ABOUT FREELANCER</h2>
+            <p class="p-0 m-0">Freelance is a free to use, MIT</p>
+            <p class="p-0 m-0">licensed Bootstrap theme created by .</p>
+        </div>
+</div>
+  </div> 
+</section>
+<footer id="copyRight" class="text-center text-white py-3">
+   <p>Copyright © Your Website 2021</p>
+</footer>
