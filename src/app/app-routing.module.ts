@@ -6,11 +6,12 @@ import { HomeComponent } from './home/home.component';
 import { PortComponent } from './port/port.component';
 
 const routes: Routes = [
-  {path:"",redirectTo:"home",pathMatch:"full"},
-  {path:"home",component:HomeComponent},
-  {path:"portfolio",component:PortComponent},
-  {path:"about",component:AboutComponent},
-  {path:'contacts',component:ContactsComponent}
+  {path:'' ,redirectTo:'home',pathMatch:'full'},
+  {path:'home',component:HomeComponent},
+  {path:'portfolio',component:PortComponent},
+  {path:'about',component:AboutComponent},
+  {path:'contacts',component:ContactsComponent},
+  {path:"**",component:HomeComponent}
 ];
 
 @NgModule({
