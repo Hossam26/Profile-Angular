@@ -2,7 +2,7 @@
     background-color: #2c3e50 !important;
 };
 nav{
-    z-index: 999999;
+    z-index: 999999 !important;
 }
 .navbar h4{
     height: 12% !important;
@@ -17,7 +17,8 @@ nav{
   color:#1abc9c !important;
 }
 .navbar-toggler{
-    padding-right: 4rem !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
     color: white;
     height: 3rem;
     width: 4rem;

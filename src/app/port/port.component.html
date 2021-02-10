@@ -15,66 +15,17 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12 my-5">
+            <div *ngFor="let profile of profiles" class="col-lg-4 col-md-6 col-sm-12 my-5">
                 <div class="item position-relative">
-                    <img src="../../assets/cabin.png" class="rounded img-fluid w-100" alt="">
+                    <img [src]="profile.imgSrc" class="rounded img-fluid w-100" alt="">
                     <div class="layer-d position-absolute">
                         <div class="links">
-                            <fa-icon [icon]="plusIcon"></fa-icon>
+                            <fa-icon [icon]="profile.imgIcon"></fa-icon>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 my-5">
-                <div class="item position-relative">
-                    <img src="../../assets/cake.png" class="rounded img-fluid w-100" alt="">
-                    <div class="layer-d position-absolute">                     
-                        <div class="links">
-                    <fa-icon [icon]="plusIcon"></fa-icon>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 my-5">
-                <div class="item position-relative">
-                    <img src="../../assets/circus.png" class="rounded img-fluid w-100" alt="">
-                    <div class="layer-d position-absolute">
-                        <div class="links">
-                            <fa-icon [icon]="plusIcon"></fa-icon>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 my-5">
-                <div class="item position-relative">
-                    <img src="../../assets/game.png" class="rounded img-fluid w-100" alt="">
-                    <div class="layer-d position-absolute">
-                        <div class="links">
-                            <fa-icon [icon]="plusIcon"></fa-icon>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 my-5">
-                <div class="item position-relative">
-                    <img src="../../assets/safe.png" class="rounded img-fluid w-100" alt="">
-                    <div class="layer-d position-absolute">                     
-                        <div class="links">
-                    <fa-icon [icon]="plusIcon"></fa-icon>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 my-5">
-                <div class="item position-relative">
-                    <img src="../../assets/submarine.png" class="rounded img-fluid w-100" alt="">
-                    <div class="layer-d position-absolute">
-                        <div class="links">
-                            <fa-icon [icon]="plusIcon"></fa-icon>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           
         </div>
     </div>
 </section>
