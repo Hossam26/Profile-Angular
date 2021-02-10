@@ -27,6 +27,7 @@ export class ContactsComponent implements OnInit {
  
       submit(){
         this._toastr.success("You have submitted your message successfully")
+           this.contactForm.reset()
       }
   
 

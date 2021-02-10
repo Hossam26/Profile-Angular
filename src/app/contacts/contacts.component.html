@@ -1,7 +1,7 @@
 <section id="contact">
     <div class="container">
         <div class="row pt-5 flex-column">
-            <h1 class="mt-5 pt-5  text-center">CONTACT ME</h1>
+            <h1 class="mt-5 pt-5 text-center">CONTACT ME</h1>
             <div class="star-elements">
                 <div class="before-star">
                 </div>
@@ -16,7 +16,7 @@
         </div>
         <div class="row mt-5">
          <form [formGroup]="contactForm" class="w-100 m-auto" (ngSubmit)="submit()">
-            <div class="col-md-9 offset-2 position-relative">
+            <div class="col-md-9 offset-md-2 mt-2">
                     
                 <div class="form-group">
                    <input [class.is-invalid]="contactForm.controls.name.invalid&&contactForm.controls.name.touched" formControlName="name" type="text" class="form-control bg-transparent mt-1 rounded-0 h-100 w-100" placeholder="Name">
@@ -25,7 +25,7 @@
                 </div>
                </div>                     
            </div>
-       <div class="col-md-9 offset-2 mt-5">
+       <div class="col-md-9 offset-md-2 mt-5">
            
            <div class="form-group">
                <input [class.is-invalid]="contactForm.controls.mail.invalid&&contactForm.controls.mail.touched" formControlName="mail" type="email" class=" form-control bg-transparent mt-1 rounded-0 h-100 w-100" placeholder="Email Address">
@@ -34,7 +34,7 @@
               </div>
            </div>
            </div>
-       <div class="col-md-9 offset-2 mt-5">
+       <div class="col-md-9 offset-md-2 mt-5">
            
            <div class="form-group">
                <input [class.is-invalid]="contactForm.controls.phone.invalid&&contactForm.controls.phone.touched" formControlName="phone" type="number" class="form-control bg-transparent mt-1 rounded-0 h-100 w-100" placeholder="phone Numer">
@@ -43,7 +43,7 @@
               </div>
            </div>
            </div>
-           <div class="col-md-9 offset-2 position-relative">
+           <div class="col-md-9 offset-md-2 position-relative">
            
                <div class="form-group">
                   <textarea [class.is-invalid]="contactForm.controls.message.invalid&&contactForm.controls.message.touched" class="form-control w-100 mb-1" formControlName="message" placeholder="Message" ></textarea>
@@ -52,7 +52,7 @@
                </div>
               </div>                     
           </div> 
-       <div class="col-md-9 offset-2 mt-5">
+       <div class="col-md-9 offset-md-2 mt-5">
            
                 <div class="form-group">
                    <button [disabled]="contactForm.invalid" type="submit" class="btn btn-primary rounded text-white font-weight-bold mb-3 px-4 py-3">Send
